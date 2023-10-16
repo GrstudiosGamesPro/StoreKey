@@ -1,2 +1,3 @@
-2023/10/16-18:16:08.683 6f4 Creating DB E:\VISUAL STUDIO\KeyStore\bin\Debug\net6.0-windows\KeyStore.exe.WebView2\EBWebView\Default\shared_proto_db\metadata since it was missing.
-2023/10/16-18:16:09.176 6f4 Reusing MANIFEST E:\VISUAL STUDIO\KeyStore\bin\Debug\net6.0-windows\KeyStore.exe.WebView2\EBWebView\Default\shared_proto_db\metadata/MANIFEST-000001
+2023/10/16-18:53:57.092 12e8 Reusing MANIFEST E:\VISUAL STUDIO\StoreKey\bin\Debug\net6.0-windows\KeyStore.exe.WebView2\EBWebView\Default\shared_proto_db\metadata/MANIFEST-000001
+2023/10/16-18:53:57.093 12e8 Recovering log #3
+2023/10/16-18:53:57.093 12e8 Reusing old log E:\VISUAL STUDIO\StoreKey\bin\Debug\net6.0-windows\KeyStore.exe.WebView2\EBWebView\Default\shared_proto_db\metadata/000003.log 
