@@ -19,8 +19,8 @@ namespace KeyStore.Scripts
 
         public void RunWeb()
         {
-            htmlIndex = File.ReadAllText ("E:\\VISUAL STUDIO\\StoreKey\\bin\\Debug\\net6.0-windows\\Data\\Web\\HMTL/index.html");
-            htmlCSS = File.ReadAllText("E:\\VISUAL STUDIO\\StoreKey\\bin\\Debug\\net6.0-windows\\Data\\Web\\CSS/styles.css");
+            htmlIndex = File.ReadAllText ("Data\\Web\\HMTL/index.html");
+            htmlCSS = File.ReadAllText("Data\\Web\\CSS/styles.css");
 
             newIndex = htmlIndex.Replace ("/*HERE INSTALL NEW STYLE CSS*/", htmlCSS);
 
