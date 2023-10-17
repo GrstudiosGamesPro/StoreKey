@@ -13,13 +13,18 @@ namespace KeyStore.Scripts
     {
         public WebView2 web = new WebView2();
         string webPath = "Data/Web/";
-        string htmlIndex;
+        string htmlIndex = "";
+        string htmlCSS = "";
+        string newIndex = "";
 
         public void RunWeb()
         {
             htmlIndex = File.ReadAllText ("E:\\VISUAL STUDIO\\StoreKey\\bin\\Debug\\net6.0-windows\\Data\\Web\\HMTL/index.html");
+            htmlCSS = File.ReadAllText("E:\\VISUAL STUDIO\\StoreKey\\bin\\Debug\\net6.0-windows\\Data\\Web\\CSS/styles.css");
 
-            Console.WriteLine ("Web content: " + htmlIndex);
+            newIndex = htmlIndex.Replace (".DATASTYLETOINSTALLHERE{ }", htmlCSS);
+
+            Console.WriteLine ("Web content: " + newIndex);
 
             web.Dock = DockStyle.Fill;
             web.CoreWebView2InitializationCompleted += OnChargeWeb;
@@ -30,7 +35,7 @@ namespace KeyStore.Scripts
         {
             if (e.IsSuccess)
             {
-                web.NavigateToString(htmlIndex);
+                web.NavigateToString(newIndex);
                 Console.WriteLine ("Web started");
             }
             else
